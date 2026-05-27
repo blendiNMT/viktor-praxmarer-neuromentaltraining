@@ -133,15 +133,4 @@ function animateCounter(el, target) {
   requestAnimationFrame(update);
 }
 
-/* Offer card subtle parallax on hover */
-document.querySelectorAll('.offer-card').forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const { left, top, width, height } = card.getBoundingClientRect();
-    const x = (e.clientX - left) / width - 0.5;
-    const y = (e.clientY - top) / height - 0.5;
-    card.style.transform = `translateY(-6px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-});
+/* Offer card subtle parallax removed - handled by CSS */
