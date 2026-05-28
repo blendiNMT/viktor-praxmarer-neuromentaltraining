@@ -50,17 +50,23 @@
     </svg>
   </div>
 
-  <div class="hero-content">
-    <p class="hero-pre">Neuromentaltraining in Tirol</p>
-    <h1>
-      <span class="line">Mentale Stärke</span>
-      <span class="line">beginnt mit</span>
-      <span class="line"><span class="accent">Klarheit</span>.</span>
-    </h1>
-    <p>Neuromentaltraining in Tirol für Menschen, die in Drucksituationen ruhiger, fokussierter und handlungsfähiger bleiben möchten.</p>
-    <div class="hero-cta">
-      <a href="kontakt.html" class="btn btn-primary">Erstgespräch anfragen</a>
-      <a href="#ablauf" class="btn btn-outline">Ablauf ansehen</a>
+  <div class="hero-shell">
+    <div class="hero-content">
+      <p class="hero-pre">Neuromentaltraining in Tirol</p>
+      <h1>
+        <span class="line">Mentale Stärke</span>
+        <span class="line">beginnt mit</span>
+        <span class="line"><span class="accent">Klarheit</span>.</span>
+      </h1>
+      <p>Neuromentaltraining in Tirol für Menschen, die in Drucksituationen ruhiger, fokussierter und handlungsfähiger bleiben möchten.</p>
+      <div class="hero-cta">
+        <a href="kontakt.html" class="btn btn-primary">Erstgespräch anfragen</a>
+        <a href="#ablauf" class="btn btn-outline">Ablauf ansehen</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <div class="hero-portrait-glow"></div>
+      <img src="assets/images/viktor-portrait-cutout.png" alt="Viktor Praxmarer" fetchpriority="high">
     </div>
   </div>
 
@@ -159,19 +165,23 @@
 <section class="section process-section" id="ablauf">
   <p class="section-label reveal">So läuft die Zusammenarbeit ab</p>
   <h2 class="reveal">Ein klarer Rahmen gibt Sicherheit</h2>
-  <div class="process-grid">
+  <div class="process-flow" aria-label="Ablauf in drei Schritten">
+    <div class="process-line" aria-hidden="true"></div>
     <div class="process-card reveal">
-      <span>01</span>
+      <span class="process-number">01</span>
+      <div class="process-icon" aria-hidden="true">✦</div>
       <h3>Erstgespräch</h3>
       <p>Wir klären dein Anliegen, deinen Alltag und ob Neuromentaltraining für dich passend ist.</p>
     </div>
     <div class="process-card reveal reveal-delay-1">
-      <span>02</span>
+      <span class="process-number">02</span>
+      <div class="process-icon" aria-hidden="true">◌</div>
       <h3>Training</h3>
       <p>Du lernst mentale Techniken und Routinen, die zu deiner Situation passen.</p>
     </div>
     <div class="process-card reveal reveal-delay-2">
-      <span>03</span>
+      <span class="process-number">03</span>
+      <div class="process-icon" aria-hidden="true">✓</div>
       <h3>Integration</h3>
       <p>Wir übertragen die Übungen in konkrete Situationen im Beruf, Sport, in der Musik oder im Alltag.</p>
     </div>
@@ -202,7 +212,7 @@
         <span>Neuromentaltraining in Absam, Tirol</span>
         <span>Einzeltraining, Workshops und Ausbildung</span>
       </div>
-      <a href="ueber-mich.html" class="offer-link" style="margin-top:1.5rem;">Mehr über Viktor</a>
+      <a href="ueber-mich.html" class="btn btn-secondary btn-about">Mehr über Viktor</a>
     </div>
   </div>
 </section>
@@ -211,27 +221,48 @@
 <section class="section faq-section">
   <p class="section-label reveal">Häufige Fragen</p>
   <h2 class="reveal">Was du vor dem Erstgespräch wissen solltest</h2>
-  <div class="faq-grid">
-    <details class="faq-item reveal" open>
-      <summary>Ist Neuromentaltraining Therapie?</summary>
-      <p>Nein. Neuromentaltraining ist ein Trainingsansatz für mentale Routinen, Fokus und Selbstregulation. Es ersetzt keine ärztliche, psychotherapeutische oder psychiatrische Behandlung.</p>
-    </details>
-    <details class="faq-item reveal reveal-delay-1">
-      <summary>Für wen ist das Training geeignet?</summary>
-      <p>Für Menschen in Beruf, Sport, Musik oder Alltag, die in belastenden Situationen klarer, ruhiger und handlungsfähiger bleiben möchten.</p>
-    </details>
-    <details class="faq-item reveal reveal-delay-2">
-      <summary>Findet das Training vor Ort oder online statt?</summary>
-      <p>Beides ist möglich. Vor Ort in Absam, Tirol, oder nach Vereinbarung online.</p>
-    </details>
+  <div class="faq-accordion" data-accordion>
+    <div class="faq-item reveal is-open">
+      <button class="faq-question" type="button" aria-expanded="true">
+        <span>Ist Neuromentaltraining Therapie?</span>
+        <span class="faq-plus" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer">
+        <p>Nein. Neuromentaltraining ist ein Trainingsansatz für mentale Routinen, Fokus und Selbstregulation. Es ersetzt keine ärztliche, psychotherapeutische oder psychiatrische Behandlung.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal reveal-delay-1">
+      <button class="faq-question" type="button" aria-expanded="false">
+        <span>Für wen ist das Training geeignet?</span>
+        <span class="faq-plus" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer">
+        <p>Für Menschen in Beruf, Sport, Musik oder Alltag, die in belastenden Situationen klarer, ruhiger und handlungsfähiger bleiben möchten.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal reveal-delay-2">
+      <button class="faq-question" type="button" aria-expanded="false">
+        <span>Findet das Training vor Ort oder online statt?</span>
+        <span class="faq-plus" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer">
+        <p>Beides ist möglich. Vor Ort in Absam, Tirol, oder nach Vereinbarung online.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CTA Banner -->
 <section class="cta-banner reveal">
-  <h2>Du möchtest wissen, ob es für dich passt?</h2>
-  <p>Im Erstgespräch klären wir ruhig und unverbindlich dein Anliegen, den passenden Rahmen und die nächsten Schritte.</p>
-  <a href="kontakt.html" class="btn btn-primary">Erstgespräch anfragen</a>
+  <div class="cta-card">
+    <p class="cta-kicker">Unverbindlich und klar</p>
+    <h2>Finde heraus, ob Neuromentaltraining zu deinem Anliegen passt.</h2>
+    <p>Im Erstgespräch klären wir ruhig, worum es geht, welcher Rahmen sinnvoll ist und welche nächsten Schritte für dich passen.</p>
+    <div class="cta-actions">
+      <a href="kontakt.html" class="btn btn-primary">Erstgespräch anfragen</a>
+      <span>Antwort in der Regel innerhalb von 24 Stunden</span>
+    </div>
+  </div>
 </section>
 
 <!-- Footer -->

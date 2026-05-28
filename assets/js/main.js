@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initCounterAnimation();
   initContactFormFallback();
+  initFaqAccordion();
 });
 
 /* Nav scroll effect */
@@ -151,6 +152,30 @@ function initContactFormFallback() {
       data.get('message') || ''
     ].join('\n'));
     window.location.href = `mailto:info@viktorpraxmarer.com?subject=${subject}&body=${body}`;
+  });
+}
+
+
+function initFaqAccordion() {
+  const accordion = document.querySelector('[data-accordion]');
+  if (!accordion) return;
+
+  const items = Array.from(accordion.querySelectorAll('.faq-item'));
+  items.forEach((item) => {
+    const button = item.querySelector('.faq-question');
+    if (!button) return;
+    button.addEventListener('click', () => {
+      const shouldOpen = !item.classList.contains('is-open');
+      items.forEach((other) => {
+        other.classList.remove('is-open');
+        const otherButton = other.querySelector('.faq-question');
+        if (otherButton) otherButton.setAttribute('aria-expanded', 'false');
+      });
+      if (shouldOpen) {
+        item.classList.add('is-open');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
   });
 }
 
