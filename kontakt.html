@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt | Viktor Praxmarer</title>
+  <meta name="description" content="Kontakt zu Viktor Praxmarer in Absam, Tirol. Erstgespräch für Neuromentaltraining anfragen.">
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -27,14 +28,14 @@
 <section class="sub-hero">
   <p class="section-label" style="color:var(--gipfel-gold);">Lass uns sprechen</p>
   <h1>Kontakt</h1>
-  <p>Bei Terminwunsch oder Fragen – melde dich gerne</p>
+  <p>Unverbindliches Erstgespräch anfragen</p>
 </section>
 
 <main class="section reveal">
   <div class="contact-grid">
     <div class="contact-info">
       <h3>So erreichst du mich</h3>
-      <p>Ruf an, schreib eine Mail oder nutze das Kontaktformular. Ich melde mich innerhalb von 24 Stunden bei dir.</p>
+      <p>Ruf an, schreib eine Mail oder nutze das Kontaktformular. Wir klären kurz, worum es geht und ob Neuromentaltraining für dein Anliegen passend ist.</p>
 
       <div class="contact-detail">
         <span class="icon">📞</span>
@@ -50,21 +51,31 @@
       </div>
     </div>
 
-    <form action="#" method="post" style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);">
+    <form action="#" method="post" class="contact-form">
       <div class="form-group">
         <label for="name">Name *</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" autocomplete="name" required>
       </div>
       <div class="form-group">
         <label for="email">E-Mail *</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+      <div class="form-group">
+        <label for="topic">Worum geht es?</label>
+        <select id="topic" name="topic">
+          <option>Erstgespräch</option>
+          <option>Sportneuromentaltraining</option>
+          <option>Musik und Auftritt</option>
+          <option>Workshop oder Vortrag</option>
+          <option>Ausbildung</option>
+        </select>
       </div>
       <div class="form-group">
         <label for="message">Nachricht *</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" required placeholder="Beschreibe kurz dein Anliegen. Bitte sende keine medizinischen Notfalldaten über dieses Formular."></textarea>
       </div>
-      <p style="font-size:0.8rem;color:var(--stein-grau);margin-bottom:1rem;">Es gilt unsere <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-      <button type="submit" class="btn btn-primary" style="width:100%;">Nachricht senden</button>
+      <p class="form-note">Es gilt die <a href="datenschutz.html">Datenschutzerklärung</a>. Neuromentaltraining ersetzt keine medizinische oder psychotherapeutische Behandlung.</p>
+      <button type="submit" class="btn btn-primary" style="width:100%;">Anfrage senden</button>
     </form>
   </div>
 </main>

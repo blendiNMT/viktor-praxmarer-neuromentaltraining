@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initParallaxHero();
   initSmoothScroll();
   initCounterAnimation();
+  initContactFormFallback();
 });
 
 /* Nav scroll effect */
@@ -131,6 +132,26 @@ function animateCounter(el, target) {
     if (progress < 1) requestAnimationFrame(update);
   }
   requestAnimationFrame(update);
+}
+
+/* Static-site fallback: opens a prefilled email instead of silently doing nothing */
+function initContactFormFallback() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const subject = encodeURIComponent(`Anfrage Neuromentaltraining: ${data.get('topic') || 'Erstgespräch'}`);
+    const body = encodeURIComponent([
+      `Name: ${data.get('name') || ''}`,
+      `E-Mail: ${data.get('email') || ''}`,
+      `Thema: ${data.get('topic') || ''}`,
+      '',
+      data.get('message') || ''
+    ].join('\n'));
+    window.location.href = `mailto:info@viktorpraxmarer.com?subject=${subject}&body=${body}`;
+  });
 }
 
 /* Offer card subtle parallax removed - handled by CSS */
