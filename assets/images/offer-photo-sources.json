@@ -1,0 +1,52 @@
+[
+  {
+    "file": "assets/images/offer-sport.jpg",
+    "query": "alps hiking",
+    "title": "mountaineer silhouette (explored)",
+    "creator": "Fratercula arctica",
+    "license": "pdm",
+    "source": "https://www.flickr.com/photos/149855645@N03/35446316292",
+    "url": "https://live.staticflickr.com/4167/35446316292_84a6ec7509_b.jpg",
+    "alt": "Ruhige Bergszene als Symbolbild für Sportneuromentaltraining"
+  },
+  {
+    "file": "assets/images/offer-music.jpg",
+    "query": "violin practice",
+    "title": "Outdoors violin practice (Unsplash)",
+    "creator": "Elijah Henderson elijahhenderson",
+    "license": "cc0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=61691274",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Outdoors_violin_practice_%28Unsplash%29.jpg",
+    "alt": "Musikerin beim Üben als Symbolbild für Neuromentaltraining für Musiker:innen"
+  },
+  {
+    "file": "assets/images/offer-ept.jpg",
+    "query": "mindfulness nature",
+    "title": "Free Your Mind",
+    "creator": "Wendelin Jacober",
+    "license": "cc0",
+    "source": "https://www.flickr.com/photos/91619724@N04/16142173530",
+    "url": "https://live.staticflickr.com/7484/16142173530_89c2897e84_b.jpg",
+    "alt": "Ruhige Natur und Wasser als Symbolbild für Stressregulation"
+  },
+  {
+    "file": "assets/images/offer-workshop.jpg",
+    "query": "business workshop",
+    "title": "2011-2-23 Missoula Small Business Workshop (4)",
+    "creator": "senatortester",
+    "license": "pdm",
+    "source": "https://www.flickr.com/photos/82557458@N03/33437742203",
+    "url": "https://live.staticflickr.com/2811/33437742203_7f8acab3e0_b.jpg",
+    "alt": "Vortragssituation als Symbolbild für Workshops und Seminare"
+  },
+  {
+    "file": "assets/images/offer-academy.jpg",
+    "query": "adult education workshop",
+    "title": "20130307-APHIS-LSC-0112",
+    "creator": "USDAgov",
+    "license": "pdm",
+    "source": "https://www.flickr.com/photos/41284017@N08/8546714221",
+    "url": "https://live.staticflickr.com/8508/8546714221_7d36a40733_b.jpg",
+    "alt": "Notizen und Lernen als Symbolbild für Ausbildung"
+  }
+]

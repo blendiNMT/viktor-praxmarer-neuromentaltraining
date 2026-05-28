@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-label="Musik">
-  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#3f4b3d"/><stop offset="1" stop-color="#17232d"/></linearGradient></defs>
-  <rect width="360" height="220" rx="24" fill="url(#g)"/>
-  <circle cx="42" cy="36" r="80" fill="#fff8ee" opacity=".08"/>
-  <circle cx="330" cy="200" r="110" fill="#c8963e" opacity=".12"/>
-  <path d="M205 52 v96 c0 24-19 42-45 42s-45-18-45-40 19-38 45-38c10 0 19 2 27 7V66l92-18v86c0 24-19 42-45 42-20 0-36-11-42-27" fill="none" stroke="#c8963e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M52 178 C98 142 132 142 180 178 C226 214 270 206 318 162" fill="none" stroke="#e7ddcf" stroke-width="8" stroke-linecap="round"/>
-</svg>
